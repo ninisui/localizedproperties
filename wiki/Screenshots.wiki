@@ -1,5 +1,3 @@
-= Screenshots =
-
 == Claves Faltantes ==
 Se ve los warnings que indican que en que locale no están localizadas las claves
 [http://localizedproperties.googlecode.com/svn/wiki/images/FirstKeyWarning.PNG]
