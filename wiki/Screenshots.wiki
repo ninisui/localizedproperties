@@ -1,10 +1,14 @@
 = Screenshots =
 
+== Claves Faltantes ==
 Se ve los warnings que indican que en que locale no están localizadas las claves
 [http://localizedproperties.googlecode.com/svn/wiki/images/FirstKeyWarning.PNG]
 
+== Crear un nueva clave ==
 [http://localizedproperties.googlecode.com/svn/wiki/images/NewImageDialog.PNG]
 
+== Una clave ya traducida ==
 [http://localizedproperties.googlecode.com/svn/wiki/images/OneWarning.PNG]
 
+== Eliminar Clave ==
 [http://localizedproperties.googlecode.com/svn/wiki/images/RemoveKey.PNG]
