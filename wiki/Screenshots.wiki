@@ -1,4 +1,10 @@
+= Screenshots =
 
-Primera Clave creada.
-Se ve los warnings que avisa que en que locale no están localizadas las claves
+Se ve los warnings que indican que en que locale no están localizadas las claves
 [http://localizedproperties.googlecode.com/svn/wiki/images/FirstKeyWarning.PNG]
+
+[http://localizedproperties.googlecode.com/svn/wiki/images/NewImageDialog.PNG]
+
+[http://localizedproperties.googlecode.com/svn/wiki/images/OneWarning.PNG]
+
+[http://localizedproperties.googlecode.com/svn/wiki/images/RemoveKey.PNG]
