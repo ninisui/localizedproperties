@@ -1,1 +1,4 @@
-[http://code.google.com/ http://code.google.com/images/code_sm.png]
+
+Primera Clave creada.
+Se ve los warnings que avisa que en que locale no están localizadas las claves
+[http://localizedproperties.googlecode.com/svn/wiki/images/FirstKeyWarning.PNG]
