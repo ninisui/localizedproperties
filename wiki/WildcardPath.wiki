@@ -8,7 +8,8 @@ WildcardPath es un objeto que permite contruir el path de archivo de properties 
 
 
 = Details =
-
+El WildcardPath contiene un string de la forma:
+{{{\{root\}}}}
 El uso de éste objeto busca resolver el problema de que para distintos lenguajes de programacion los archivos de properties tienen su internacionalización bajo distintos patrones.
 
 == [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ==
@@ -21,4 +22,3 @@ _To Explain_
 
 == [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ==
   * Generalmente la localizacion se encuentra en un directorio llamado locale al mismo nivel que eldirectorio de fuentes src
-
