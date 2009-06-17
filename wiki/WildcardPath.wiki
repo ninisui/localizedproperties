@@ -1,6 +1,8 @@
+#summary This page explain the WildcardPath concept
 #labels ResourceBundle,Properties
-#This page explain the WildcardPath concept
-(Needs translation)
+#sidebar TableOfContents
+
+*(Needs translation)*
 
 = Introduction =
 
@@ -8,8 +10,10 @@ WildcardPath es un objeto que permite contruir el path de archivo de properties 
 
 
 = Details =
-El WildcardPath contiene un string de la forma:
-{{{\{root\}}}}
+El WildcardPath contiene un string de la forma {{{/{root}/{lang}_{country}/{filename}.{fileextesion}}}} que describe en forma similar a una expresion regular el path del archivo de properties. Cuando el usuario intenta cargar un archivo de recursos con éste editor, el plugin intenta descubrir dentro de los path predeterminados, cual coincide con el path del archivo. 
+Una vez que encontrada una coincidencia, determina los distintos locales que descubre en el árbol de directorios. De ésta manera encuentra los distintos locales a partir del archivo de recursos abierto.
+
+
 El uso de éste objeto busca resolver el problema de que para distintos lenguajes de programacion los archivos de properties tienen su internacionalización bajo distintos patrones.
 
 == [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ==
