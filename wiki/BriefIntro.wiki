@@ -6,10 +6,3 @@ Often as developers use to make our internationalization applications usable by 
 After a complicated time keep all the locations in sync, because the latest is our native language.Then we missing some key files, in some poorly translated, and so on.
 
 The goal of the plugin is to provide an editor where we can review and modify all resource files at once and get a glimpse of the texts for all languages.
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
