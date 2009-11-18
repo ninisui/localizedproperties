@@ -1,8 +1,7 @@
 #summary This is a multilanguage property files editor.
 
 = Introduction =
+Many times, in many projects, we need internationalize labels and texts. Generally we localize the keys of the main language, or our natural language. After time, we start translation with another language. And after time we add a new key in main language, and we forgot translate the another, and again we need translate. As development progress, the files become desynchronized, and we hear, "this file don't have these key", "this key is not translated",or something else.
 
-Often as developers use to make our internationalization applications usable by users who speak different languages. Most programming languages allow applications with internationalization properties files where we want to translate the text to display.
-After a complicated time keep all the locations in sync, because the latest is our native language.Then we missing some key files, in some poorly translated, and so on.
-
-The goal of the plugin is to provide an editor where we can review and modify all resource files at once and get a glimpse of the texts for all languages.
+= Objective = 
+The goal of the plugin is to provide an editor where we can review and modify all resource files at once and get a glimpse of the texts for all languages that we need translate our application.
