@@ -17,9 +17,9 @@ Una vez que encontrada una coincidencia, determina los distintos locales que des
 El uso de éste objeto busca resolver el problema de que para distintos lenguajes de programacion los archivos de properties tienen su internacionalización bajo distintos patrones.
 
 == [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ==
-  * El property por default se encuentra en com.mipaquete.MiProperty.properties
-  * El property para es AR se encuentra en com.mipaquete.MiProperty.es_AR.properties
-  * La i18n de en US se encuentra en com.mipaquete.MiProperty.en_US.properties
+  * El property por default se encuentra en `com.mipaquete.MiProperty.properties`
+  * El property para es AR se encuentra en `com.mipaquete.MiProperty.es_AR.properties`
+  * La i18n de en US se encuentra en `com.mipaquete.MiProperty.en_US.properties`
 
 == Struts ==
 _To Explain_
