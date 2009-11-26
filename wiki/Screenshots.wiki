@@ -1,14 +1,14 @@
 == Crear un archivo de recursos localizados ==
-[http://localizedproperties.googlecode.com/svn/wiki/images/NewLocaleWizard.PNG]
+[http://localizedproperties.googlecode.com/svn/wiki/images/newLocaleWizard.png]
 
 == Crear un nueva clave ==
-[http://localizedproperties.googlecode.com/svn/wiki/images/CreateKey.PNG]
-[http://localizedproperties.googlecode.com/svn/wiki/images/NewImageDialog.PNG]
+[http://localizedproperties.googlecode.com/svn/wiki/images/createKey.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/newKeyDialog.png]
 
 == Claves Faltantes ==
 Se ve los warnings que indican que en que locale no están localizadas las claves
-[http://localizedproperties.googlecode.com/svn/wiki/images/FirstKeyWarning.PNG]
-[http://localizedproperties.googlecode.com/svn/wiki/images/OneWarning.PNG]
+[http://localizedproperties.googlecode.com/svn/wiki/images/firstKeyWarning.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/oneWarning.png]
 
 == Eliminar Clave ==
-[http://localizedproperties.googlecode.com/svn/wiki/images/RemoveKey.PNG]
+[http://localizedproperties.googlecode.com/svn/wiki/images/removeKey.png]
