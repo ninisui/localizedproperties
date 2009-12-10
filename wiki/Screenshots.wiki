@@ -1,5 +1,7 @@
-== Crear un nueva clave ==
+=== Add a New key ===
+You need make right click and select the option add a newkey
 [http://localizedproperties.googlecode.com/svn/wiki/images/createKey.png]
+And put the new key text
 [http://localizedproperties.googlecode.com/svn/wiki/images/newKeyDialog.png]
 
 == Claves Faltantes ==
