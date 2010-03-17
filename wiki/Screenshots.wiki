@@ -13,4 +13,6 @@ Se ve los warnings que indican que en que locale no est&aacute;n localizadas las
 [http://localizedproperties.googlecode.com/svn/wiki/images/removeKey.png]
 
 == Crear un archivo de recursos localizados ==
-[http://localizedproperties.googlecode.com/svn/wiki/images/newLocaleWizard.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/wizardStart.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/wizardMaxi.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/wizardMini.png]
