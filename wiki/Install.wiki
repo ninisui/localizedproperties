@@ -1,4 +1,4 @@
-#summary Here we explain how to install the LocalizedProperties como plugin de eclipse
+#summary Here we explain how to install the LocalizedProperties, like Eclipse plugin
 #labels install
 
 = How to install as eclipse plugin =
