@@ -17,4 +17,4 @@ Add your content here.  Format your content with:
   * Comming back to the "Available Software" tab, we need to fill the checkbox in the update site
   * And finally we need to make click in the Install button
   * Wait some minutes and restart the Eclipse IDE when the system ask you
-  * And magic begins :)
+  * And the magic begins :)
