@@ -28,4 +28,5 @@ _To Explain_
   * Generalmente la localizacion se encuentra en un directorio llamado locale al mismo nivel que eldirectorio de fuentes src
 
 == WildcardPath Configuration Screen ==
-[http://code.google.com/p/localizedproperties/wiki/images/localizedPreferences.png]
+
+[http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png]
