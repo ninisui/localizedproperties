@@ -26,3 +26,6 @@ _To Explain_
 
 == [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ==
   * Generalmente la localizacion se encuentra en un directorio llamado locale al mismo nivel que eldirectorio de fuentes src
+
+== WildcardPath Configuration Screen ==
+[http://code.google.com/p/localizedproperties/wiki/images/localizedPreferences.png]
