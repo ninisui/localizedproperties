@@ -1,5 +1,6 @@
 #summary Here we explain how to install the LocalizedProperties, like Eclipse plugin
 #labels install
+#sidebar TableOfContents
 
 = How to install as eclipse plugin =
 
