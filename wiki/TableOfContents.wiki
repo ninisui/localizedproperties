@@ -1,2 +1,5 @@
 * [Articles HOWTO articles]
     * [BriefIntro]
+    * [Install]
+    * [Screenshots]
+    * [WildcardPath]
