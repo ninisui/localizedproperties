@@ -1,0 +1,20 @@
+#summary Here we explain how to install the LocalizedProperties, like Eclipse plugin
+#labels install
+
+= How to install as eclipse plugin =
+
+Add your content here.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * In the Eclipse, you need to go to the Help>Software Updates
+  * Select the "Available Software" Tab
+  * Push the "Add Site" button
+  * In the text box, put the next url [http://localizedproperties.googlecode.com/svn/trunk/updates/]
+  * And push the Ok button
+  * Comming back to the "Available Software" tab, we need to fill the checkbox in the update site
+  * And finally we need to make click in the Install button
+  * Wait some minutes and restart the Eclipse IDE when the system ask you
+  * And the magic begins :)
