@@ -1,10 +1,12 @@
+#sidebar TableOfContents 
+
 #summary Localized Properties es un editor de archivos de localización multilenguaje
 
-= Introduction =
+= Introducion =
 Muchas veces, en muchos proyectos, necesitamos internacionalizar etiquetas y textos. Comunmente localizamos las claves en nuestro lenguaje, o nuestro lenguaje natura. Desues de un teimpo, iniciamos la tradución en otro lenguaje. Despues añadimos una clave en el lenguaje principal y olvidamos de traducirlo en el otro idioma, y nuevamente necesitamos traducir, y así sucesivamente.
 En el progreso del desarrollo, los archivos se dessincronizan, y escuchamos "éste archivo no tiene esta clave", "ésta clave no está traducida", algo así.
 
-= Objective =
+= Objetivo =
 El objetivo del plugin es proveer an editor donde podemos revisar y modificar todos los archivos de recursos de una vez y tener de un vistazo, los textos de todos los lenguajes que necesitamos traducir nuestra aplicacion.  
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/navigator-editor.png]
