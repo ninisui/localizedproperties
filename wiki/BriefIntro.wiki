@@ -1,3 +1,5 @@
+#sidebar TableOfContents
+
 #summary This is a multilanguage property files editor.
 
 = Introduction =
