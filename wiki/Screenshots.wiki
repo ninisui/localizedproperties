@@ -1,3 +1,4 @@
+#sidebar TableOfContents
 == Add a New key ==
 You need make right click and select the option add a newkey
 
