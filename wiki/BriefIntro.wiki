@@ -9,3 +9,6 @@ As development progress, the files become desynchronized, and we hear, "this fil
 The goal of the plugin is to provide an editor where we can review and modify all resource files at once and get a glimpse of the texts for all languages that we need translate our application.
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/navigator-editor.png]
+
+=== Presentation ===
+<wiki:video url="http://www.youtube.com/watch?v=8SxIqzIMkjg" width="500"/>
