@@ -1,0 +1,3 @@
+#summary Preguntas frecuentes
+
+* Cuando abro un archivo de propiedades, el editor me dice que no encontro un wildcard que cumpla con el path del archivo.
