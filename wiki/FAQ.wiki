@@ -7,4 +7,4 @@ You can try open the Localization Properties, and add your own WildcardPath that
 ===How I could get both Finnish and English versions of my propertie files===
 _Under Development_
 
-[#How_I_could_get_both_Finnish_and_English_versions_of_my_propertie_files]
+[#How_I_could_get_both_Finnish_and_English_versions_of_my_properti]
