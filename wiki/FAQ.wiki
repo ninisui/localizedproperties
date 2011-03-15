@@ -1,4 +1,5 @@
 #summary Frequently Asked Questions
+[#How_I_could_get_both_Finnish_and_English_versions_of_my_properti]
 
 ===When I open a property file, I receive an error that said "I didn't find a wildcard that match with ..."===
 You can try open the Localization Properties, and add your own WildcardPath that must describe the file path to discover
@@ -6,5 +7,3 @@ You can try open the Localization Properties, and add your own WildcardPath that
 
 ===How I could get both Finnish and English versions of my propertie files===
 _Under Development_
-
-[#How_I_could_get_both_Finnish_and_English_versions_of_my_properti]
