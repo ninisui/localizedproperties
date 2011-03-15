@@ -6,7 +6,7 @@ You can try open the Localization Properties, and add your own [WildcardPath] th
 [http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png]
 
 ===How I could get both Finnish and English versions of my properties files?===
-If you don't have a file that matches with a WildCardPath, you must to create it and put it in the first place in the list.
+If you don't have a file that matches with a [WildCardPath], you must to create it and put it in the first place in the list.
 The next time that you open the editor, the editor will try to open from this place.
 
 Or you can make right click on opened editor and select add Locale and follow the wizard.
