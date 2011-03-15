@@ -1,3 +1,5 @@
-#summary Preguntas frecuentes
+#summary Frequently Asked Questions
 
-* Cuando abro un archivo de propiedades, el editor me dice que no encontro un wildcard que cumpla con el path del archivo.
+===When I open a property file, I receive an error that said "I didn't find a wildcard that match with ..."===
+You can try open the Localization Properties 
+[localizedPreferencies.png]
