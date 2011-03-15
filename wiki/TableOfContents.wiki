@@ -1,6 +1,6 @@
 * [Articles HOWTO articles]
     * [BriefIntro]
     * [Install]
-    * [Screenshots]
     * [FAQ]
+    * [Screenshots]
     * [WildcardPath]
