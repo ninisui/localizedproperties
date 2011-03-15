@@ -5,5 +5,5 @@
 You can try open the Localization Properties, and add your own WildcardPath that must describe the file path to discover
 [http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png]
 
-===How I could get both Finnish and English versions of my propertie files===
+===How I could get both Finnish and English versions of my properties files?===
 _Under Development_
