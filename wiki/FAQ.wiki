@@ -1,4 +1,5 @@
 #summary Frequently Asked Questions
+#sidebar TableOfContents
 
 ===When I open a property file, I receive an error that said "I didn't find a wildcard that match with ..."===
 You can try open the Localization Properties, and add your own WildcardPath that must describe the file path to discover
