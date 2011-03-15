@@ -1,9 +1,10 @@
 #summary Frequently Asked Questions
-[#How_I_could_get_both_Finnish_and_English_versions_of_my_properti]
 
 ===When I open a property file, I receive an error that said "I didn't find a wildcard that match with ..."===
 You can try open the Localization Properties, and add your own WildcardPath that must describe the file path to discover
 [http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png]
 
 ===How I could get both Finnish and English versions of my properties files?===
-_Under Development_
+If you don't have a file that matches with a WildCardPath, you must to create it and put it in the first place in list.
+The next time that you open the editor, the editor will try to open from this place.
+Or you can make right click on opened editor and select add Locale and follow the wizard.
