@@ -2,4 +2,4 @@
 
 ===When I open a property file, I receive an error that said "I didn't find a wildcard that match with ..."===
 You can try open the Localization Properties, and add your own WildcardPath that must describe the file path to discover
-[http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png|with=300]
+[http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png^with=300]
