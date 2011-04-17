@@ -12,10 +12,11 @@ This piece of text is like a simple regular expresion (simplified) that show to 
 The wildcard path have fixed tokens that can be used in distincts form to build the path to some file.
 The common structure is:
 /{root}/{filename}.{lang}.{country}.{fileextension}
+
 * Folder bars are '/'
 * {filename} Is the wildcard that represents the filename
 * {fileextension} Again is the representation of fileextension
-* {lang} Represents 2 letters lower case code of language [ISO Codes |http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43380]
+* {lang} Represents 2 letters lower case code of language [ISO Codes  http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43380]
 * {country}
 (Under update)
 [http://localizedproperties.googlecode.com/svn/wiki/images/wildcardpathEditor.png]
