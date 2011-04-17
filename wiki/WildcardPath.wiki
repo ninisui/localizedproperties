@@ -26,7 +26,7 @@ The common structure is:
 It has been extended wildcard functionality and we can describe optional attributes and an order to avoid it to try to match similar files.
 Now you can enclose part of path into curly brackets and number to the end. Let's go to an example
 
-/{root}/{filename}*(.{lang})2*.{country}.{fileextension}
+/{root}/{filename}*(*.{lang}*)2*.{country}.{fileextension}
 
 == [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ==
   * El property por default se encuentra en `com.mipaquete.MiProperty.properties`
