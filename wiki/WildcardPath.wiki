@@ -30,7 +30,7 @@ Now you can enclose part of path into curly brackets and number to the end. Let'
 
 Here I'm telling that country and language, are optional. When the file matcher use this wp, will make.
  * Test full wildcard matches
- * Test wildcard without country an . character, enclosed with curly bracket and marked like first option
+ * Test wildcard without country an . character, enclosed with curly bracket and marked like first optional parameter
  * If doesn't match, try avoiding the optional marked like second option
 
 
