@@ -18,8 +18,8 @@ The common structure is:
  * {root} Represents the folder base to store the properties
  * {filename} Is the wildcard that represents the filename
  * {fileextension} Again is the representation of fileextension
- * {lang} Represents 2 letters lower case code of language [http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43380 ISO Language Codes]
- * {country} Represents 2 letters upper case country codes [http://www.iso.org/iso/english_country_names_and_code_elements ISO Country Codes]
+ * {lang} Represents 2 letters lower case code of language [http://en.wikipedia.org/wiki/ISO_639 ISO Language Codes Wikipedia]
+ * {country} Represents 2 letters upper case country codes [http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 ISO Country Codes Wikipedia]
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/wildcardpathEditor.png]
 
