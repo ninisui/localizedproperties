@@ -12,7 +12,7 @@ As development progress, the files become desynchronized, and we hear,
 = Objective = 
 The goal of the plugin is to provide an editor where we can review and modify 
 all resource files at once and get a glimpse of the texts for all languages 
-that we need translate our application.
+that we need translate to our application.
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/navigator-editor.png]
 
