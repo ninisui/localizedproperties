@@ -12,7 +12,7 @@ This piece of text is like a simple regular expresion (simplified) that show to 
 The wildcard path have fixed tokens that can be used in distincts form to build the path to some file.
 
 The common structure is:
-_*/{root}/{filename}.{lang}.{country}.{fileextension}*_
+*/{root}/{filename}.{lang}.{country}.{fileextension}*
 
  * Folder bars are '/'
  * {filename} Is the wildcard that represents the filename
