@@ -14,7 +14,7 @@ The wildcard path have fixed tokens that can be used in distincts form to build 
 The common structure is:
 */{root}/{filename}.{lang}.{country}.{fileextension}*
 
- * Folder bars are '/'
+ * Folder separators are '/'
  * {root} Represents the folder base to store the properties
  * {filename} Is the wildcard that represents the filename
  * {fileextension} Again is the representation of fileextension
