@@ -13,7 +13,7 @@ The wildcard path have fixed tokens that can be used in distincts form to build 
 The common structure is:
 /{root}/{filename}.{lang}.{country}.{fileextension}
 
-* Folder bars are '/'
+ * Folder bars are '/'
 * {filename} Is the wildcard that represents the filename
 * {fileextension} Again is the representation of fileextension
 * {lang} Represents 2 letters lower case code of language [ISO Codes  http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43380]
