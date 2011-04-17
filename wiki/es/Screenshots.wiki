@@ -1,26 +1,26 @@
 == Add a New key ==
 You need make right click and select the option add a newkey
 
-[http://localizedproperties.googlecode.com/svn/wiki/images/createKey.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/createKey.png]
 
 And put the new key text
 
-[http://localizedproperties.googlecode.com/svn/wiki/images/newKeyDialog.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/newKeyDialog.png]
 
 == Claves Faltantes ==
-Se ven los warnings que indican que en que locale no est√°n localizadas las claves
+Se ven los warnings que indican que en que locale no est·n localizadas las claves
 
-[http://localizedproperties.googlecode.com/svn/wiki/images/firstKeyWarning.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/firstKeyWarning.png]
 
-[http://localizedproperties.googlecode.com/svn/wiki/images/oneWarning.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/oneWarning.png]
 
 == Eliminar Clave ==
 
-[http://localizedproperties.googlecode.com/svn/wiki/images/removeKey.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/removeKey.png]
 
 == Crear un archivo de recursos localizados ==
-[http://localizedproperties.googlecode.com/svn/wiki/images/wizardStart.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/wizardStart.png]
 
-[http://localizedproperties.googlecode.com/svn/wiki/images/wizardMini.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/wizardMini.png]
 
-[http://localizedproperties.googlecode.com/svn/wiki/images/wizardMaxi.png]
+[http://localizedproperties.googlecode.com/svn/wiki/images/es/wizardMaxi.png]

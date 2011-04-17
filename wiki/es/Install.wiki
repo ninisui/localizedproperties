@@ -2,13 +2,6 @@
 #labels install
 
 = How to install as eclipse plugin =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
   * In the Eclipse, you need to go to the Help>Software Updates
   * Select the "Available Software" Tab
   * Push the "Add Site" button

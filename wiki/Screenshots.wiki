@@ -8,18 +8,19 @@ And put the new key text
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/newKeyDialog.png]
 
-== Claves Faltantes ==
-Se ven los warnings que indican que en que locale no están localizadas las claves
+== Missing keys ==
+
+You can see warnings that indicate unlocalized keys
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/firstKeyWarning.png]
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/oneWarning.png]
 
-== Eliminar Clave ==
+== Delete Key ==
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/removeKey.png]
 
-== Crear un archivo de recursos localizados ==
+== Create localized properties file ==
 [http://localizedproperties.googlecode.com/svn/wiki/images/wizardStart.png]
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/wizardMini.png]
