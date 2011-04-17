@@ -2,15 +2,8 @@
 #labels install
 #sidebar TableOfContents
 
-= How to install as eclipse plugin =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * In the Eclipse, you need to go to the Help>Software Updates
+= How to install as Eclipse plugin =
+  * Into Eclipse, you need to go to the Help>Software Updates
   * Select the "Available Software" Tab
   * Push the "Add Site" button
   * In the text box, put the next url [http://localizedproperties.googlecode.com/svn/trunk/updates/]
