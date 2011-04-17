@@ -3,7 +3,7 @@
 
 = Introduction =
 Many times, in many projects, we need internationalize labels and texts.
- Commonly we localize the keys of the main language, or our natural language. 
+Commonly we localize the keys of the main language, or our natural language. 
 After time, we start translation with other language. And after time we add 
 a new key in main language, and we forgot translate the another, and again we need translate. 
 As development progress, the files become desynchronized, and we hear, 
