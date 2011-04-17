@@ -1,6 +1,6 @@
 * [Articles HOWTO articles]
     * [BriefIntro]
-     * [Introduction]
+     * [BriefIntro#Introduction]
     * [Install]
     * [FAQ]
     * [Screenshots]
