@@ -26,19 +26,25 @@ The common structure is:
 It has been extended wildcard functionality and we can describe optional attributes and an order to avoid it to try to match similar files.
 Now you can enclose part of path into curly brackets and number to the end. Let's go to an example
 
-/{root}/{filename}*(*.{lang}*)2*.{country}.{fileextension}
+/{root}/{filename}*(*.{lang}*)2**(*.{country}*)1*.{fileextension}
+Here I'm telling that country and language, are optional. When the file matcher use this wp, will make.
+ * Test full wildcard matches
+ * Test wildcard without country an . character, enclosed with curly bracket and marked like first option
+ * If doesn't match, try avoiding the optional marked like second option
 
-== [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ==
+
+== Common languages ==
+=== [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ===
   * El property por default se encuentra en `com.mipaquete.MiProperty.properties`
   * El property para es AR se encuentra en `com.mipaquete.MiProperty.es_AR.properties`
   * La i18n de en US se encuentra en `com.mipaquete.MiProperty.en_US.properties`
 
-== Struts ==
+=== Struts ===
 _To Explain_
 
-== [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ==
+=== [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ===
   * Generalmente la localizacion se encuentra en un directorio llamado locale al mismo nivel que eldirectorio de fuentes src
 
-== WildcardPath Configuration Screen ==
+=== WildcardPath Configuration Screen ===
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png]
