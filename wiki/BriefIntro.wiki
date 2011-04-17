@@ -1,5 +1,5 @@
 #summary This is a multilanguage property files editor.
-#sidebar TableOfContents
+#sidebar TableOfContents á
 
 = Introduction =
 Many times, in many projects, we need internationalize labels and texts.
