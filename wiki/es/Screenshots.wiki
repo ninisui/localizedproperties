@@ -1,14 +1,14 @@
-== Add a New key ==
-You need make right click and select the option add a newkey
+== Agregar una nueva clave ==
+Usted necesita hacer clic derecho y seleccionar Agregar Clave
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/es/createKey.png]
 
-And put the new key text
+Y escribir la clave necesaria
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/es/newKeyDialog.png]
 
 == Claves Faltantes ==
-Se ven los warnings que indican que en que locale no est·n localizadas las claves
+Se ven los warnings que indican que en que locale no est√°n localizadas las claves
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/es/firstKeyWarning.png]
 
