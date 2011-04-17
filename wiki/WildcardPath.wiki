@@ -2,9 +2,7 @@
 #labels ResourceBundle,Properties
 #sidebar TableOfContents
 
-*(Needs translation)*
-
-= Introduction =
+= Introducción =
 WildcardPath is a piece of text that try to describe an estructure of folder + file + locale (language & country) used by the plugin to discover asociated files.
 This piece of text is like a simple regular expresion (simplified) that show to the plugin, how to search files into your project.
 
