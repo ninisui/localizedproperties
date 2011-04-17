@@ -1,2 +1,6 @@
 * [Articles HOWTO articles]
-    * [BriefIntro]
+    * [Introduccion]
+    * [Instalacion]
+    * [Preguntas frecuentes]
+    * [Capturas]
+    * [WildcardPath]
