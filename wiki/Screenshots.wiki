@@ -19,7 +19,8 @@ You can see warnings that indicate unlocalized keys
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/removeKey.png]
 
-== Add a new locale from editor ==
+== Add a new locale, or delete locale from editor ==
+
 [http://localizedproperties.googlecode.com/svn/wiki/images/addLocale.png]
 
 == Create localized properties file ==
