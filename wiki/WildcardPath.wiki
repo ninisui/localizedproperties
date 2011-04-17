@@ -24,7 +24,7 @@ The common structure is:
 [http://localizedproperties.googlecode.com/svn/wiki/images/wildcardpathEditor.png]
 
 It has been extended wildcard functionality and we can describe optional attributes and an order to avoid it to try to match similar files.
-Now you can enclose part of path into curly brackets and number to the end. Let's go to an example
+Now you can enclose part of path into curly brackets and a number to the end that indicates search sort. Let's go to an example
 
 /{root}/{filename}*(*.{lang}*)2**(*.{country}*)1*.{fileextension}
 
