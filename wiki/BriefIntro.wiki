@@ -1,7 +1,7 @@
 #summary This is a multilanguage property files editor.
 #sidebar TableOfContents
 
-= Introduction á =
+= Introduction =
 Many times, in many projects, we need internationalize labels and texts.
 Commonly we localize the keys of the main language, or our natural language. 
 After time, we start translation with other language. And after time we add 
@@ -18,3 +18,10 @@ that we need translate to our application.
 
 === Presentation ===
 <wiki:video url="http://www.youtube.com/watch?v=8SxIqzIMkjg" width="500"/>
+
+
+a acentuada á
+e acentuada é
+i acentuada í
+o acentuada ó
+u acentuada ú
