@@ -1,3 +1,5 @@
+<wiki:toc max_depth="1" />
+
 == Add a New key ==
 You need make right click and select the option add a newkey
 
@@ -29,4 +31,3 @@ You can see warnings that indicate unlocalized keys
 [http://localizedproperties.googlecode.com/svn/wiki/images/wizardMini.png]
 
 [http://localizedproperties.googlecode.com/svn/wiki/images/wizardMaxi.png]
-
