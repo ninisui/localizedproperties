@@ -5,8 +5,8 @@
     * [Screenshots]
     * [WildcardPath]
     * [Releases]
-      * [Version 0.5]
-      * [Version 0.6]
+      * [Version0.5]
+      * [Version0.6]
 
 Milestone-Release0.6 = Usable Version
 Milestone-Release0.6.5 = 0.6 Bug Fixing
