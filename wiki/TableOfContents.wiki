@@ -3,6 +3,6 @@
 * [FAQ]
 * [Screenshots]
 * [WildcardPath]
-  * [Releases]
+* [Releases]
   * [Releases#Version_0_5]
   * [Releases#Version_0_6]
