@@ -29,3 +29,6 @@
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=29 29]||Bug WildcardPath||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=31 31]||GWT Files Support||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=51 51]||Sortable Locales||
+
+
+<wiki:gadget url="http://google-code-project-hosting-gadgets.googlecode.com/svn/trunk/examples/issueupdates_example.xml" up_projectName="support" />
