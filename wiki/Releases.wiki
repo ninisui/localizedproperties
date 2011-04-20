@@ -4,6 +4,7 @@
 * The ResourceList has been improved applying
 * The ResourceList has been improved with a best algorithm to discover files
 * Best error report in Eclipse error log framework
+* Now you can add optional parts into wildcard path descriptor (see WildcardPath documentation for more details)
 
 === Fixed Issues===
 ||Id||Description||
@@ -18,7 +19,15 @@
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=73 73]||RuntimeException when I try to open any properties file||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=74 74]||wrong duplicated key handling after sort by KEY||
 
+== Version 0.7.5 ==
+_Under update_
+
+== Version 0.7 ==
+_Under update_
+
+
 == Version 0.6 ==
+_Under update_
 
 ||Id||Description||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=9 9]||Sinchronization Files Model||
