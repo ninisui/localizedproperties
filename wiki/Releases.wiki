@@ -24,4 +24,5 @@
 == Version 0.6 ==
 
 ||Id||Description||
-||[/localizedproperties/issues/detail?id=9&can=1&q=Milestone%3DRelease0.6 9]||Sinchronization Model||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=9 9]||Sinchronization Files Model||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=14 14]||Resource Files without country|| 
