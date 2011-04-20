@@ -7,8 +7,8 @@ Comunmente localizamos las claves en nuestro lenguaje, o nuestro lenguaje natura
 Despues de un tiempo, iniciamos la tradución en otro lenguaje. 
 Despues añadimos una clave en el lenguaje principal y olvidamos de traducirlo en el otro idioma, 
 y nuevamente necesitamos traducir, y así sucesivamente.
-En el progreso del desarrollo, los archivos se dessincronizan, y escuchamos "éste archivo no tiene ésta clave", 
-"ésta clave no está traducida", algo así.
+En el progreso del desarrollo, los archivos se dessincronizan, y escuchamos cosas como 
+"éste archivo no tiene ésta clave","ésta clave no está traducida", o cosas así.
 
 = Objetivo =
 El objetivo del plugin es proveer un editor donde podemos revisar 
