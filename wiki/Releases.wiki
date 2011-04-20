@@ -1,25 +1,22 @@
-== Version 0.5 ===
+== Version 0.8 ==
 
+* In this version has been improved WildcardPath to support more complex paths
+* The ResourceList has been improved applying
+* The ResourceList has been improved with a best algorithm to discover files
+* Best error report in Eclipse error log framework
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=== Fixed Issues===
+||Id||Description||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=38 38]||Files Changes detection||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=42 42]||Bug creating file only with language||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=48 48]||Error adding new locale||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=56 56]||Error loading related files||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=57 57]||Error open files, they are open crossed||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=61 61]||Open other type of files. Ej: .ini Used by Joomla||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=70 70]||Renaming key, just rename into default locale||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=71 71]||Null Pointer Exception with files only with language||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=73 73]||RuntimeException when I try to open any properties file||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=74 74]||wrong duplicated key handling after sort by KEY||
 
 == Version 0.6 ==
 
@@ -30,5 +27,4 @@
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=31 31]||GWT Files Support||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=51 51]||Sortable Locales||
 
-
-<wiki:gadget url="http://google-code-project-hosting-gadgets.googlecode.com/svn/trunk/examples/issueupdates_example.xml" up_projectName="support" />
+== Version 0.5 ===
