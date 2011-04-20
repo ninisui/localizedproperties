@@ -24,4 +24,4 @@
 == Version 0.6 ==
 
 ||Id||Description||
-||9||Sinchronization Model||
+||[/localizedproperties/issues/detail?id=9&can=1&q=Milestone%3DRelease0.6 9]||Sinchronization Model||
