@@ -34,15 +34,18 @@ Here I'm telling that country and language, are optional. When the file matcher 
 
 == Common languages ==
 === [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ===
-  * El property por default se encuentra en `com.mipaquete.MiProperty.properties`
-  * El property para es AR se encuentra en `com.mipaquete.MiProperty.es_AR.properties`
-  * La i18n de en US se encuentra en `com.mipaquete.MiProperty.en_US.properties`
+  * Default property is in `com.mipaquete.MiProperty.properties`
+  * The locale es AR is founded in `com.mypackage.MyProperty.es_AR.properties`
+  * The i18n of en US is showed in `com.mypackage.MyProperty.en_US.properties`
 
 === Struts ===
 _To Explain_
 
 === [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ===
-  * Generalmente la localizacion se encuentra en un directorio llamado locale al mismo nivel que eldirectorio de fuentes src
+_To Explain_
+
+== Joomla ===
+_To Explain_
 
 === WildcardPath Configuration Screen ===
 
