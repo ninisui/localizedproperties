@@ -4,5 +4,5 @@
   * [Screenshots]
   * [WildcardPath]
   * [Releases]
-    * [Releases#Version_0_5]
-    * [Releases#Version_0_6]
+    * [Releases#Version_0_5 Version 0.5]
+    * [Releases#Version_0_6 Version 0.6]
