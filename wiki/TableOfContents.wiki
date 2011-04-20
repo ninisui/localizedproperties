@@ -1,19 +1,8 @@
-* [Articles HOWTO articles]
-    * [BriefIntro Brief Info]
-    * [Install]
-    * [FAQ]
-    * [Screenshots]
-    * [WildcardPath]
-    * [Releases]
-      * [Releases#Version_0_5]
-      * [Releases#Version_0_6]
-
-Milestone-Release0.6 = Usable Version
-Milestone-Release0.6.5 = 0.6 Bug Fixing
-Milestone-Release0.7 = Nuevas funcionalizades
-Milestone-Release0.7.5 = 0.6 Bug Fixing
-Milestone-Release0.8 = Nuevas funcionalidades
-Milestone-Release0.8.5 = 0.8 Bug fixing
-Milestone-Release0.9 = Nuevas funcionalidades
-Milestone-Release0.9.5 = 0.9 Bug fixing
-Milestone-Release1.0.0 = 1.0 Beta
+* [BriefIntro Brief Info]
+* [Install]
+* [FAQ]
+* [Screenshots]
+* [WildcardPath]
+  * [Releases]
+  * [Releases#Version_0_5]
+  * [Releases#Version_0_6]
