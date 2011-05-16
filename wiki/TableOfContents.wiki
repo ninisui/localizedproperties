@@ -1,6 +1,7 @@
 * [BriefIntro Brief Info]
   * [Install]
-    * [Install#Helios Helios] 
+    * [Install#Helios_Workaround Helios] 
+    * [Install#How_to_install_as_Eclipse_plugin Common Process]
   * [FAQ]
   * [Screenshots]
   * [WildcardPath]
