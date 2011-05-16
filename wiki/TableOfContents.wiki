@@ -1,6 +1,6 @@
 * [BriefIntro Brief Info]
   * [Install]
-    * [Install#Helios] 
+    * [Install#Helios Helios] 
   * [FAQ]
   * [Screenshots]
   * [WildcardPath]
