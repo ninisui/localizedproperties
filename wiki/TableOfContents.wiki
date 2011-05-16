@@ -7,3 +7,5 @@
     * [Releases#Version_0.8 Version 0.8]
     * [Releases#Version_0.7.5 Version 0.7.5]
     * [Releases#Version_0.7 Version 0.7]
+    * [Releases#Version_0.6 Version 0.6]
+    * [Releases#Version_0.5 Version 0.5]
