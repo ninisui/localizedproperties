@@ -12,9 +12,11 @@ The next time that you open the editor, the editor will try to open from this pl
 Or you can make right click on opened editor and select add Locale and follow the wizard.
 [http://localizedproperties.googlecode.com/svn/wiki/images/addLocale.png]
 
-===Why I can't see my installation of plugin translated?===
+===Why my installation of plugin is not translated in my own language?===
 Nowadays the plugin was translated to english and spanish.
-I have made some tests to discover problems about translations, but I
+
+
+I have made some tests to discover some problems about translations, but I
 didn't reproduce them.
 I tested it changing the default locale in eclipse.ini file into
 eclipse instalation.
