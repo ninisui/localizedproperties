@@ -19,7 +19,7 @@ didn't reproduce them.
 I tested it changing the default locale in eclipse.ini file into
 eclipse instalation.
 You must to add two param after -vmargs params to test this.
-The params are -Duser.language and -Duser.country, and must to be
+The params are *-Duser.language* and *-Duser.country*, and must to be
 followed by two letter code of language and two letters code of
 country respectively (see de example)
 If you use an unsupported locale (language+country) the plugin will
@@ -33,8 +33,8 @@ eclipse.ini located into Eclipse instalation folder
 -Xms512m
 -Xmx1024m
 -Djava.net.preferIPv4Stack=true
-*-Duser.language=en*
-*-Duser.country=US*
+-Duser.language=en
+-Duser.country=US
 }}}
 
 Explanation about how to change system locale in Eclipse
