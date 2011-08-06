@@ -3,6 +3,8 @@
     * [Install#Installing_under_Helios Helios] 
     * [Install#How_to_install_as_Eclipse_plugin Common Process]
   * [FAQ]
+    * [FAQ#How_I_could_get_both_Finnish_and_English_versions_of_my_properti]
+    * [FAQ#Why_I_can&#x27;t_see_my_installation_of_plugin_translated?]
   * [Screenshots]
   * [WildcardPath]
   * [Releases]
