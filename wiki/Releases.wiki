@@ -1,3 +1,20 @@
+== Version 0.8.1 Bug Fixing ==
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 == Version 0.8 ==
 
  * In this version has been improved WildcardPath to support more complex paths
