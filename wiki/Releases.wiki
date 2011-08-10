@@ -1,13 +1,13 @@
 == Version 0.8.1 Bug Fixing ==
 ||Id||Type||Priority||Description||
-||[http://code.google.com/p/localizedproperties/issues/detail?id=72 72]||Enhancement||Medium||Agregar una descripcion amigable cuando no se encuentra un wildcardpath apropiado|| 
-||77||Defect||Medium||Sort problem on default language column|| 
-||79||Defect||Medium||Adding new repeated key doesn't dispatch an error message|| 
-||82||Defect||Medium||Problem with removing recently added wildcard|| 
-||83||Enhancement||Medium||It must be implemented variant of Locale|| 
-||84||Defect||Medium||A bug in Properties wizard|| 
-||86||Defect||Medium||Wizard return invalid filename, without country infomation|| 
-||89||Defect||Medium||Defaults Wildcards cannot be reloaded|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=72 72]||Enhancement||Medium||Friendly description when the plugin doesn't find an appropiate wildcard|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=77 77]||Defect||Medium||Sort problem on default language column|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=79 79]||Defect||Medium||Adding new repeated key doesn't dispatch an error message|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=82 82]||Defect||Medium||Problem with removing recently added wildcard|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=83 83]||Enhancement||Medium||It must be implemented variant of Locale|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=84 84]||Defect||Medium||A bug in Properties wizard|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=86 86]||Defect||Medium||Wizard return invalid filename, without country infomation|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=89 89]||Defect||Medium||Defaults Wildcards cannot be reloaded|| 
 
 == Version 0.8 ==
 
