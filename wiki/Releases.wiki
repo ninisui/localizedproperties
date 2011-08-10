@@ -1,13 +1,13 @@
 == Version 0.8.1 Bug Fixing ==
 ||Id||Type||Priority||Description||
-|72|Enhancement|Medium|Agregar una descripcion amigable cuando no se encuentra un wildcardpath apropiado| 
-|77|Defect|Medium|Sort problem on default language column| 
-|79|Defect|Medium|Adding new repeated key doesn't dispatch an error message| 
-|82|Defect|Medium|Problem with removing recently added wildcard| 
-|83|Enhancement|Medium|It must be implemented variant of Locale| 
-|84|Defect|Medium||A bug in Properties wizard| 
-|86|Defect|Medium|Wizard return invalid filename, without country infomation| 
-|89|Defect|Medium|Defaults Wildcards cannot be reloaded|  
+||72||Enhancement||Medium||Agregar una descripcion amigable cuando no se encuentra un wildcardpath apropiado|| 
+||77||Defect||Medium||Sort problem on default language column|| 
+||79||Defect||Medium||Adding new repeated key doesn't dispatch an error message|| 
+||82||Defect||Medium||Problem with removing recently added wildcard|| 
+||83||Enhancement||Medium||It must be implemented variant of Locale|| 
+||84||Defect||Medium||A bug in Properties wizard|| 
+||86||Defect||Medium||Wizard return invalid filename, without country infomation|| 
+||89||Defect||Medium||Defaults Wildcards cannot be reloaded|| 
 
 == Version 0.8 ==
 
