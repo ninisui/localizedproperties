@@ -8,6 +8,7 @@
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=84 84]||Defect||Medium||A bug in Properties wizard|| 
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=86 86]||Defect||Medium||Wizard return invalid filename, without country infomation|| 
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=89 89]||Defect||Medium||Defaults Wildcards cannot be reloaded|| 
+
 _Thank you to Rafał, for his help for this release_
 
 == Version 0.8 ==
