@@ -5,7 +5,6 @@
   * [FAQ]
     * [FAQ#When_I_open_a_property_file,_I_receive_an_error_that_said_&quot; When I open a property file...]
     * [FAQ#How_I_could_get_both_Finnish_and_English_versions_of_my_properti How I could get both Finnish and English...]
-    * [FAQ#Why_my_installation_of_plugin_is_not_translated_in_my_own_langua Why my installation of plugin is not translated...]
     * [TestDistinctLocale Test with distinct language country]
   * [Screenshots]
   * [WildcardPath]
