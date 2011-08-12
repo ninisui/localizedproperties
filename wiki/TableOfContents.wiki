@@ -3,8 +3,6 @@
     * [Install#Installing_under_Helios Helios]
     * [Install#How_to_install_as_Eclipse_plugin Common Process]
   * [FAQ]
-    * [FAQ#When_I_open_a_property_file,_I_receive_an_error_that_said_&quot; When I open a property file...]
-    * [FAQ#How_I_could_get_both_Finnish_and_English_versions_of_my_properti How I could get both Finnish and English...]
     * [TestDistinctLocale Test with distinct language country]
   * [Screenshots]
   * [WildcardPath]
