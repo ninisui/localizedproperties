@@ -52,6 +52,7 @@ List of Country Codes
 http://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements
 
 I will apreciate all comments of questions about this.
-And if you want to see the plugin in your own language, please contact me
+
+_If you want to see the plugin in your own language, please contact me_
 
 Regards. 
