@@ -3,7 +3,6 @@
     * [Install#Installing_under_Helios Helios]
     * [Install#How_to_install_as_Eclipse_plugin Common Process]
   * [FAQ]
-    * [TestDistinctLocale Test with distinct language country]
   * [Screenshots]
   * [WildcardPath]
   * [Releases]
