@@ -1,0 +1,14 @@
+Version 0.8.5 - New features
+-Now the unicode and special characters are supported
+-Supports multiline values
+-Autofocus new created key
+
+Version 0.8.1 - Bug Fixing
+- Friendly description when the plugin doesn't find an appropiate
+wildcard
+- Sort problem on default language column
+- Adding new repeated key doesn't dispatch an error message
+- Problem with removing recently added wildcard
+- A bug in Properties wizard
+- Wizard return invalid filename, without country infomation
+- Defaults Wildcards cannot be reloaded

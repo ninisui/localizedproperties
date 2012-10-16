@@ -1,6 +1,5 @@
 package com.triadsoft.properties.editors;
 
-import java.io.IOException;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -23,6 +22,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.MessageBox;
+import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorPart;
@@ -34,9 +34,8 @@ import org.eclipse.ui.ide.IDE;
 import org.eclipse.ui.part.MultiPageEditorPart;
 import org.eclipse.ui.texteditor.ITextEditorActionConstants;
 
-import com.triadsoft.common.properties.ILocalizedPropertyFileListener;
-import com.triadsoft.common.properties.PropertyFile;
 import com.triadsoft.properties.editor.LocalizedPropertiesPlugin;
+import com.triadsoft.properties.model.PropertiesFile;
 import com.triadsoft.properties.model.Property;
 import com.triadsoft.properties.model.ResourceList;
 import com.triadsoft.properties.model.utils.LocalizedPropertiesLog;
@@ -69,7 +68,7 @@ import com.triadsoft.properties.model.utils.WildCardPath2;
  * @see ResourceBundle
  */
 public class PropertiesEditor extends MultiPageEditorPart implements
-		IResourceChangeListener, ILocalizedPropertyFileListener {
+		IResourceChangeListener {
 
 	private static final String EDITOR_TABLE_SEARCH = "editor.table.search.label";
 
@@ -116,7 +115,7 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 		IFile file = ((IFileEditorInput) getEditorInput()).getFile();
 		resource = new ResourceList(file);
 		createPage0();
-		//createPage1();
+		// createPage1();
 		setPartName(resource.getFileName());
 	}
 
@@ -319,25 +318,27 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 	 */
 	protected void pageChange(int pageIndex) {
 
-		PropertyFile pf = resource.getPropertyFile(resource.getDefaultLocale());
+		PropertiesFile pf = (PropertiesFile) resource.getPropertyFile(resource
+				.getDefaultLocale());
 		if (pageIndex == 1) {
 			if (isTableModified) {
-//				textEditor.getDocumentProvider()
-//						.getDocument(textEditor.getEditorInput())
-//						.set(pf.asText());
+				// textEditor.getDocumentProvider()
+				// .getDocument(textEditor.getEditorInput())
+				// .set(pf.asText());
 			}
 		} else if (pageIndex == 0) {
 			if (isTextModified) {
-				try {
-					IFile file = ((IFileEditorInput) getEditorInput()).getFile();
-					PropertyFile npf = new PropertyFile(file,
-							pf.getEncoding(), pf.getSeparator());
-					npf.setFile(pf.getFile());
-					resource.setPropertyFile(npf, resource.getDefaultLocale());
-					tableViewer.setLocales(resource.getLocales());
-				} catch (IOException e) {
-					LocalizedPropertiesLog.error(e.getLocalizedMessage());
-				}
+				// try {
+				IFile file = ((IFileEditorInput) getEditorInput()).getFile();
+				// PropertyFile npf = new PropertyFile(file, pf.getEncoding(),
+				// pf.getSeparator());
+				PropertiesFile npf = new PropertiesFile(file);
+				// npf.setFile(pf.getFile());
+				resource.setPropertyFile(npf, resource.getDefaultLocale());
+				tableViewer.setLocales(resource.getLocales());
+				// } catch (IOException e) {
+				// LocalizedPropertiesLog.error(e.getLocalizedMessage());
+				// }
 			}
 		}
 		super.pageChange(pageIndex);
@@ -395,7 +396,7 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 			}
 		}
 		tableChanged();
-		resource.keyChanged(oldKey, key);
+		String newKey = resource.keyChanged(oldKey, key);
 		tableViewer.refresh();
 	}
 
@@ -418,17 +419,19 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 
 	public void addKey(String key) {
 		tableChanged();
-		resource.addKey(key);
+		// La clave puede cambiar si la clave está repetida
+		key = resource.addKey(key);
 		tableViewer.refresh();
-		Object[] properties = resource.getProperties();
-		for (int i = 0; i < properties.length; i++) {
-			if (((Property) properties[i]).getKey().equals(key)) {
-				tableViewer.setSelection(
-						new StructuredSelection(properties[i]), true);
-				tableViewer.getTable().setSelection(new int[] { i });
+		int index = 0;
+		while (index < tableViewer.getTable().getItemCount()) {
+			TableItem item = tableViewer.getTable().getItem(index);
+			Property prop = (Property) item.getData();
+			if (prop.getKey().equals(key)) {
+				tableViewer.setSelection(new StructuredSelection(prop));
+				tableViewer.getTable().showItem(item);
 				break;
 			}
-
+			index++;
 		}
 	}
 }

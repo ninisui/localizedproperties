@@ -113,11 +113,11 @@ public class PropertyTableViewer extends TableViewer {
 		Font font = getTable().getFont();
 		FontData[] fontdata = font.getFontData();
 		FontData data = fontdata[0];
-		data.height = size;
+		// data.setHeight(size);
 		getTable().setFont(
 				new Font(editor.getSite().getShell().getDisplay(), data));
-		LocalizedPropertiesPlugin.getDefault().getPreferenceStore().setValue(
-				PREFERENCES_FONT_SIZE, size);
+		LocalizedPropertiesPlugin.getDefault().getPreferenceStore()
+				.setValue(PREFERENCES_FONT_SIZE, size);
 		this.updateEditorsFontSize(size);
 	}
 
@@ -135,7 +135,7 @@ public class PropertyTableViewer extends TableViewer {
 		Font font = getTable().getFont();
 		FontData[] fontdata = font.getFontData();
 		FontData data = fontdata[0];
-		return data.height;
+		return data.getHeight();
 	}
 
 	private void createKeyColumn() {
@@ -209,6 +209,7 @@ public class PropertyTableViewer extends TableViewer {
 			}
 
 			public void widgetDefaultSelected(SelectionEvent event) {
+				System.out.println("Hola");
 			}
 		});
 	}
