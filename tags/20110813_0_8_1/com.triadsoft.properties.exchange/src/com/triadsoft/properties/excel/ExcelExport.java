@@ -16,7 +16,6 @@ public class ExcelExport implements IPropertiesExport {
 	private static final String DESCRIPTION_KEY = "ExcelExport.description";
 
 	public ExcelExport() {
-		// TODO Auto-generated constructor stub
 	}
 
 	/**

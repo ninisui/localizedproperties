@@ -11,7 +11,6 @@ public class ExcelImport implements IPropertiesImport {
 	private static final String IMPORT_MENU_NAME_KEY = "ExcelImport.menu";
 
 	public ExcelImport() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getDescription() {
