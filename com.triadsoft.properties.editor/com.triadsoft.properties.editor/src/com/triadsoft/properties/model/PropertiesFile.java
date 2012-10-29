@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.nio.charset.Charset;
 import java.util.Date;
 import java.util.Enumeration;
 import java.util.Iterator;
@@ -26,13 +27,17 @@ import com.triadsoft.common.properties.IPropertyFile;
  * add new key/value separators. Also add methods to serve the editor
  * 
  * @author Triad (flores.leonardo@gmail.com)
- * 
+ * @since 0.8.3
  */
 public class PropertiesFile extends Properties implements IPropertyFile {
 
 	protected IFile ifile = null;
+	
+	protected File file = null;
 
 	protected char separator = '=';
+	
+	protected boolean hasScapedCode=false;
 
 	/**
 	 * 
@@ -50,6 +55,7 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 
 	public PropertiesFile(File file) {
 		super();
+		this.file = file;
 		try {
 			FileInputStream fis = new FileInputStream(file);
 			load(fis);
@@ -146,6 +152,7 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 			if (aChar == '\\') {
 				aChar = in[off++];
 				if (aChar == 'u') {
+					hasScapedCode = true;
 					// Read the xxxx
 					int value = 0;
 					for (int i = 0; i < 4; i++) {
@@ -421,10 +428,17 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 		bw.newLine();
 	}
 
-	public void store(OutputStream out, String comments) throws IOException {
-		store0(new BufferedWriter(new OutputStreamWriter(out, "8859_1")),
-				comments, true);
+	public void store(OutputStream out, String comments,boolean escapedUnicode) throws IOException {
+		store0(new BufferedWriter(new OutputStreamWriter(out, Charset.defaultCharset())),
+				comments, escapedUnicode);
 	}
+	
+//	public void store(OutputStream out, String comments) throws IOException {
+//		// store0(new BufferedWriter(new OutputStreamWriter(out, "8859_1")),
+//		// comments, true);
+//		store0(new BufferedWriter(new OutputStreamWriter(out, Charset.defaultCharset())),
+//				comments, hasScapedCode);
+//	}
 
 	private void store0(BufferedWriter bw, String comments, boolean escUnicode)
 			throws IOException {
@@ -475,16 +489,23 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 	}
 
 	public void save() throws IOException, CoreException {
-		OutputStream ostream = new FileOutputStream(ifile.getLocation()
-				.toFile());
-		store(ostream, null);
+		this.save(false);
+	}
+	
+	public void save(boolean escapedUnicode) throws IOException, CoreException {
+		OutputStream ostream = new FileOutputStream(file);
+		store(ostream, null,escapedUnicode);
 	}
 
 	public IFile getIFile() {
 		return ifile;
 	}
-
+	
 	public File getFile() {
-		return ifile.getLocation().toFile();
+		return file;
+	}
+	
+	public boolean hasScapedCode(){
+		return this.hasScapedCode;
 	}
 }

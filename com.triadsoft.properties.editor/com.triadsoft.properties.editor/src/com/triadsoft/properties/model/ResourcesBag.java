@@ -82,6 +82,11 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 		return true;
 	}
 
+	/**
+	 * Receive an property object and add the key to all locales
+	 * @param property
+	 * @return
+	 */
 	public boolean addProperty(Property property) {
 		String key = property.getKey();
 		int index = 0;
@@ -269,12 +274,16 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 	}
 
 	public void save() {
+		this.save(false);
+	}
+	
+	public void save(boolean escapedUnicode) {
 		for (Iterator<Locale> iterator = keySet().iterator(); iterator
 				.hasNext();) {
 			Locale locale = iterator.next();
 			PropertiesFile pf = (PropertiesFile) get(locale);
 			try {
-				pf.save();
+				pf.save(escapedUnicode);
 			} catch (FileNotFoundException e) {
 				LocalizedPropertiesLog.error(e.getLocalizedMessage(), e);
 			} catch (IOException e) {

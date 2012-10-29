@@ -1,0 +1,16 @@
+Eclipse Europa Packages (2007 - v 3.3)
+Eclipse Ganymede Packages (2008 - v 3.4)
+Eclipse Ganymede SR1 Packages (v 3.4.1)
+Eclipse Ganymede SR2 Packages (v 3.4.2)
+Eclipse Galileo Packages (2009 - v 3.5)
+Eclipse Galileo SR1 Packages (v 3.5.1)
+Eclipse Galileo SR2 Packages (v 3.5.2)
+Eclipse Helios Packages (2010 - v 3.6)
+Eclipse Helios SR1 Packages (v 3.6.1)
+Eclipse Helios SR2 Packages (v 3.6.2)
+Eclipse Indigo Packages (2011 - v 3.7)
+Eclipse Indigo SR1 Packages (v 3.7.1)
+Eclipse Indigo SR2 Packages (v 3.7.2)
+Eclipse Juno Packages (2012 - v 4.2) 
+
+Tomado desde http://wiki.eclipse.org/Older_Versions_Of_Eclipse
