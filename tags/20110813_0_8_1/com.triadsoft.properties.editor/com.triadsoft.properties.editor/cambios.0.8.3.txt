@@ -1,7 +1,8 @@
-Version 0.8.5 - New features
+Version 0.8.3 - New features
 -Now the unicode and special characters are supported
 -Supports multiline values
 -Autofocus new created key
+-Now escaped chars unicode are allowed(\u0999)
 
 Version 0.8.1 - Bug Fixing
 - Friendly description when the plugin doesn't find an appropiate

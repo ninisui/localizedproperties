@@ -141,7 +141,11 @@ public class ResourceList {
 	}
 
 	public void save() {
-		propertyFiles.save();
+		this.save(false);
+	}
+	
+	public void save(boolean escapedUnicode) {
+		propertyFiles.save(escapedUnicode);
 		IContainer container = ((PropertiesFile) propertyFiles.get(pd
 				.getDefaultLocale())).getIFile().getParent();
 		if (pd.getWildcardPath().getRoot() == null) {

@@ -79,6 +79,10 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 	private static final String EDITOR_TABLE_OVERWRITE_KEY_CONFIRM_TITLE = "editor.table.overwriteKey.confirm.title";
 
 	private static final String EDITOR_TABLE_OVERWRITE_KEY_CONFIRM_MESSAGE = "editor.table.overwriteKey.confirm.message";
+	
+	private static final String EDITOR_SAVE_AS_UNICODE_TITLE = "editor.save_as.escaped.title";
+	
+	private static final String EDITOR_SAVE_AS_UNICODE_MESSAGE = "editor.save_as.escaped.message";
 
 	public static final String KEY_COLUMN_ID = "key_column";
 
@@ -258,11 +262,23 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 	}
 
 	/**
-	 * Sobreescribo el save as... porque no puedo sobrescribir varios archivos
-	 * juntos. Nada para hacer porque nunca será llamado
+	 * Save as gives possibility to save files in escaped characters unicode
 	 */
 	public void doSaveAs() {
-		// Nada para hacer porque nunca será llamado;
+		MessageBox existMsg = new MessageBox(getEditorSite().getShell(),
+				SWT.YES | SWT.NO | SWT.ICON_WARNING);
+		//Dialog that ask about posibility of save files with escaped characters unicode, or not
+		existMsg.setMessage(LocalizedPropertiesPlugin.getString(EDITOR_SAVE_AS_UNICODE_TITLE));
+		existMsg.setText(LocalizedPropertiesPlugin.getString(EDITOR_SAVE_AS_UNICODE_MESSAGE));
+		if (existMsg.open() == SWT.NO) {
+			//Guardar los caracteres sin escapar
+			System.out.println("guardando sin escapar");
+			resource.save();
+			return;
+		}
+		//Guardar los caracteres escapados
+		System.out.println("guardando caracteres escapados");
+		resource.save(true);
 	}
 
 	/**
@@ -310,7 +326,7 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 	 * @see org.eclipse.ui.part.EditorPart#isSaveAsAllowed()
 	 */
 	public boolean isSaveAsAllowed() {
-		return false;
+		return true;
 	}
 
 	/**
