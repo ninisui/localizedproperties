@@ -17,6 +17,7 @@ import org.eclipse.ui.IWorkbenchPage;
 import org.eclipse.ui.part.MultiPageEditorActionBarContributor;
 import org.eclipse.ui.texteditor.ITextEditorActionConstants;
 
+import com.triadsoft.common.utils.LocalizedPropertiesLog;
 import com.triadsoft.properties.editor.extensions.IPropertiesExport;
 import com.triadsoft.properties.editor.extensions.IPropertiesImport;
 import com.triadsoft.properties.editors.actions.CopyPropertyAction;
@@ -27,7 +28,6 @@ import com.triadsoft.properties.editors.actions.IncreaseFontAction;
 import com.triadsoft.properties.editors.actions.PastePropertyAction;
 import com.triadsoft.properties.editors.actions.RemoveSearchTextAction;
 import com.triadsoft.properties.editors.actions.SearchTextAction;
-import com.triadsoft.properties.model.utils.LocalizedPropertiesLog;
 
 /**
  * Controla la instalacion/desinstalacion de las acciones globales para los

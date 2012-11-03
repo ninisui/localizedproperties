@@ -1,4 +1,4 @@
-package com.triadsoft.properties.model.utils;
+package com.triadsoft.common.utils;
 
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;

@@ -17,8 +17,9 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.MessageBox;
 
 import com.triadsoft.common.properties.IPropertyFile;
+import com.triadsoft.common.utils.LocalizedPropertiesLog;
+import com.triadsoft.common.utils.LocalizedPropertiesMessages;
 import com.triadsoft.properties.editor.LocalizedPropertiesPlugin;
-import com.triadsoft.properties.model.utils.LocalizedPropertiesLog;
 
 /**
  * Esta es una clase que se encarga de controlar los recursos de propiedades y
@@ -73,7 +74,7 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 	public boolean addResource(Locale locale, IFile file) throws IOException,
 			CoreException {
 		if (!file.exists()) {
-			throw new IOException(LocalizedPropertiesPlugin.getString(
+			throw new IOException(LocalizedPropertiesMessages.getString(
 					ERROR_FILE_DOESN_EXIST, new String[] { file.getFullPath()
 							.toString() }));
 		}
@@ -84,6 +85,7 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 
 	/**
 	 * Receive an property object and add the key to all locales
+	 * 
 	 * @param property
 	 * @return
 	 */
@@ -118,16 +120,16 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 		String newKey = getNewKey(key);
 		if (newKey == null) {
 			throw new RuntimeException(
-					LocalizedPropertiesPlugin
+					LocalizedPropertiesMessages
 							.getString(ERROR_KEY_MUST_NOT_BE_NULL));
 		}
 		if (allKeys.contains(newKey)) {
 			MessageBox messageBox = new MessageBox(LocalizedPropertiesPlugin
 					.getDefault().getWorkbench().getActiveWorkbenchWindow()
 					.getShell(), SWT.OK | SWT.ICON_ERROR);
-			messageBox.setText(LocalizedPropertiesPlugin
+			messageBox.setText(LocalizedPropertiesMessages
 					.getString(ERROR_REPEATED_KEY));
-			messageBox.setMessage(LocalizedPropertiesPlugin
+			messageBox.setMessage(LocalizedPropertiesMessages
 					.getString(ERROR_REPEATED_KEY));
 			if (messageBox.open() == SWT.OK) {
 				return key;
@@ -195,7 +197,7 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 
 	public boolean removeLocale(Locale locale) throws CoreException {
 		if (!keySet().contains(locale)) {
-			throw new RuntimeException(LocalizedPropertiesPlugin.getString(
+			throw new RuntimeException(LocalizedPropertiesMessages.getString(
 					ERROR_LOCALE_DOESNT_EXIST,
 					new String[] { locale.toString() }));
 		}
@@ -214,7 +216,7 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 			CoreException {
 		if (get(locale) == null) {
 			throw new RuntimeException(
-					LocalizedPropertiesPlugin.getString(ERROR_LOST_LOCALE));
+					LocalizedPropertiesMessages.getString(ERROR_LOST_LOCALE));
 		}
 		remove(locale);
 		addResource(locale, file);
@@ -273,17 +275,30 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 		return hasChanged;
 	}
 
-	public void save() {
+	/**
+	 * Force to save files as unescaped code
+	 */
+	public void saveAsUnescapedUnicode() {
 		this.save(false);
 	}
-	
-	public void save(boolean escapedUnicode) {
+
+	/**
+	 * Force to save files as escaped code
+	 */
+	public void saveAsEscapedUnicode() {
+		this.save(true);
+	}
+
+	/**
+	 * This method keep the file style that was loaded from file
+	 */
+	public void save() {
 		for (Iterator<Locale> iterator = keySet().iterator(); iterator
 				.hasNext();) {
 			Locale locale = iterator.next();
 			PropertiesFile pf = (PropertiesFile) get(locale);
 			try {
-				pf.save(escapedUnicode);
+				pf.save();
 			} catch (FileNotFoundException e) {
 				LocalizedPropertiesLog.error(e.getLocalizedMessage(), e);
 			} catch (IOException e) {
@@ -292,6 +307,32 @@ public class ResourcesBag extends HashMap<Locale, IPropertyFile> {
 				LocalizedPropertiesLog.error(e.getLocalizedMessage(), e);
 			}
 		}
+		refreshWorkspace();
+	}
+
+	private void save(boolean escapedUnicode) {
+		for (Iterator<Locale> iterator = keySet().iterator(); iterator
+				.hasNext();) {
+			Locale locale = iterator.next();
+			PropertiesFile pf = (PropertiesFile) get(locale);
+			try {
+				if (escapedUnicode) {
+					pf.saveAsEscapedUnicode();
+				} else {
+					pf.saveAsUnescapedUnicode();
+				}
+			} catch (FileNotFoundException e) {
+				LocalizedPropertiesLog.error(e.getLocalizedMessage(), e);
+			} catch (IOException e) {
+				LocalizedPropertiesLog.error(e.getLocalizedMessage(), e);
+			} catch (CoreException e) {
+				LocalizedPropertiesLog.error(e.getLocalizedMessage(), e);
+			}
+		}
+		refreshWorkspace();
+	}
+
+	private void refreshWorkspace() {
 		PropertiesFile pf = (PropertiesFile) get(defaultLocale);
 		try {
 			pf.getIFile().getParent().refreshLocal(IFile.DEPTH_INFINITE, null);
