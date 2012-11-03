@@ -23,10 +23,10 @@ import org.eclipse.jface.operation.IRunnableWithProgress;
 import org.eclipse.ui.PlatformUI;
 
 import com.triadsoft.common.properties.IPropertyFile;
-import com.triadsoft.properties.editor.LocalizedPropertiesPlugin;
+import com.triadsoft.common.utils.LocalizedPropertiesLog;
+import com.triadsoft.common.utils.LocalizedPropertiesMessages;
 import com.triadsoft.properties.model.utils.IFilesDiscoverer;
 import com.triadsoft.properties.model.utils.IWildcardPath;
-import com.triadsoft.properties.model.utils.LocalizedPropertiesLog;
 import com.triadsoft.properties.model.utils.NewPathDiscovery;
 import com.triadsoft.properties.model.utils.WildCardPath2;
 import com.triadsoft.properties.wizards.LocalizedPropertiesWizard;
@@ -140,12 +140,20 @@ public class ResourceList {
 		return propertyFiles.keyChanged(oldKey, key);
 	}
 
-	public void save() {
-		this.save(false);
+	public void saveAsUnescapedUnicode() {
+		propertyFiles.saveAsUnescapedUnicode();
 	}
-	
-	public void save(boolean escapedUnicode) {
-		propertyFiles.save(escapedUnicode);
+
+	public void saveAsEscapedUnicode() {
+		propertyFiles.saveAsEscapedUnicode();
+	}
+
+	public void save() {
+		propertyFiles.save();
+		refreshSpace();
+	}
+
+	private void refreshSpace() {
 		IContainer container = ((PropertiesFile) propertyFiles.get(pd
 				.getDefaultLocale())).getIFile().getParent();
 		if (pd.getWildcardPath().getRoot() == null) {
@@ -156,7 +164,7 @@ public class ResourceList {
 				container = container.getParent();
 			}
 		}
-		
+
 		try {
 			container.refreshLocal(IFile.DEPTH_INFINITE, null);
 		} catch (CoreException e) {
@@ -181,7 +189,7 @@ public class ResourceList {
 				.getFile(new Path(newFilePath));
 		if (newFile.exists()) {
 			MessageDialog.openError(PlatformUI.getWorkbench().getDisplay()
-					.getActiveShell(), "Error", LocalizedPropertiesPlugin
+					.getActiveShell(), "Error", LocalizedPropertiesMessages
 					.getString(PREFERENCES_ADD_LOCALE_ACTION_ERROR,
 							new Object[] { locale }));
 			return;

@@ -34,11 +34,11 @@ import org.eclipse.ui.ide.IDE;
 import org.eclipse.ui.part.MultiPageEditorPart;
 import org.eclipse.ui.texteditor.ITextEditorActionConstants;
 
-import com.triadsoft.properties.editor.LocalizedPropertiesPlugin;
+import com.triadsoft.common.utils.LocalizedPropertiesLog;
+import com.triadsoft.common.utils.LocalizedPropertiesMessages;
 import com.triadsoft.properties.model.PropertiesFile;
 import com.triadsoft.properties.model.Property;
 import com.triadsoft.properties.model.ResourceList;
-import com.triadsoft.properties.model.utils.LocalizedPropertiesLog;
 import com.triadsoft.properties.model.utils.PropertyFilter;
 import com.triadsoft.properties.model.utils.PropertyTableViewer;
 import com.triadsoft.properties.model.utils.WildCardPath2;
@@ -79,9 +79,9 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 	private static final String EDITOR_TABLE_OVERWRITE_KEY_CONFIRM_TITLE = "editor.table.overwriteKey.confirm.title";
 
 	private static final String EDITOR_TABLE_OVERWRITE_KEY_CONFIRM_MESSAGE = "editor.table.overwriteKey.confirm.message";
-	
+
 	private static final String EDITOR_SAVE_AS_UNICODE_TITLE = "editor.save_as.escaped.title";
-	
+
 	private static final String EDITOR_SAVE_AS_UNICODE_MESSAGE = "editor.save_as.escaped.message";
 
 	public static final String KEY_COLUMN_ID = "key_column";
@@ -172,7 +172,7 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 
 		int index = addPage(tableViewer.getControl());
 		setPageText(index,
-				LocalizedPropertiesPlugin.getString(EDITOR_TAB_PROPERTIES));
+				LocalizedPropertiesMessages.getString(EDITOR_TAB_PROPERTIES));
 	}
 
 	public IAction getTableViewerAction(String workbenchActionId) {
@@ -192,7 +192,7 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 			textEditor = new TextEditor();
 			int index = addPage(textEditor, getEditorInput());
 			setPageText(index,
-					LocalizedPropertiesPlugin.getString(EDITOR_TAB_PREVIEW));
+					LocalizedPropertiesMessages.getString(EDITOR_TAB_PREVIEW));
 		} catch (PartInitException e) {
 			LocalizedPropertiesLog.error(e.getLocalizedMessage());
 		}
@@ -207,7 +207,7 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 
 		int index = addPage(composite);
 		setPageText(index,
-				LocalizedPropertiesPlugin.getString(EDITOR_TAB_PREVIEW));
+				LocalizedPropertiesMessages.getString(EDITOR_TAB_PREVIEW));
 	}
 
 	protected void tableChanged() {
@@ -254,11 +254,13 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 	 * Saves the multi-page editor's document.
 	 */
 	public void doSave(IProgressMonitor monitor) {
-		// getEditor(0).doSave(monitor);
-		resource.save();
-		isTableModified = false;
-		isTextModified = false;
-		firePropertyChange(IEditorPart.PROP_DIRTY);
+		tableViewer.cancelEditing();
+		//if(!tableViewer.isBusy()){
+			resource.save();
+			isTableModified = false;
+			isTextModified = false;
+			firePropertyChange(IEditorPart.PROP_DIRTY);
+		//}
 	}
 
 	/**
@@ -266,19 +268,24 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 	 */
 	public void doSaveAs() {
 		MessageBox existMsg = new MessageBox(getEditorSite().getShell(),
-				SWT.YES | SWT.NO | SWT.ICON_WARNING);
-		//Dialog that ask about posibility of save files with escaped characters unicode, or not
-		existMsg.setMessage(LocalizedPropertiesPlugin.getString(EDITOR_SAVE_AS_UNICODE_TITLE));
-		existMsg.setText(LocalizedPropertiesPlugin.getString(EDITOR_SAVE_AS_UNICODE_MESSAGE));
+				SWT.YES | SWT.NO | SWT.ICON_QUESTION);
+		// Dialog that ask about posibility of save files with escaped
+		// characters unicode, or not
+		existMsg.setMessage(LocalizedPropertiesMessages
+				.getString(EDITOR_SAVE_AS_UNICODE_MESSAGE));
+		existMsg.setText(LocalizedPropertiesMessages
+				.getString(EDITOR_SAVE_AS_UNICODE_TITLE));
+		isTableModified = false;
+		isTextModified = false;
+
 		if (existMsg.open() == SWT.NO) {
-			//Guardar los caracteres sin escapar
-			System.out.println("guardando sin escapar");
-			resource.save();
-			return;
+			// Guardar los caracteres sin escapar
+			resource.saveAsUnescapedUnicode();
+		} else {
+			// Guardar los caracteres escapados
+			resource.saveAsEscapedUnicode();
 		}
-		//Guardar los caracteres escapados
-		System.out.println("guardando caracteres escapados");
-		resource.save(true);
+		firePropertyChange(IEditorPart.PROP_DIRTY);
 	}
 
 	/**
@@ -401,10 +408,10 @@ public class PropertiesEditor extends MultiPageEditorPart implements
 			MessageBox existMsg = new MessageBox(getEditorSite().getShell(),
 					SWT.YES | SWT.NO | SWT.ICON_WARNING);
 
-			existMsg.setMessage(LocalizedPropertiesPlugin.getString(
+			existMsg.setMessage(LocalizedPropertiesMessages.getString(
 					EDITOR_TABLE_OVERWRITE_KEY_CONFIRM_MESSAGE,
 					new String[] { key }));
-			existMsg.setText(LocalizedPropertiesPlugin.getString(
+			existMsg.setText(LocalizedPropertiesMessages.getString(
 					EDITOR_TABLE_OVERWRITE_KEY_CONFIRM_TITLE,
 					new String[] { key }));
 			if (existMsg.open() == SWT.NO) {

@@ -32,12 +32,12 @@ import com.triadsoft.common.properties.IPropertyFile;
 public class PropertiesFile extends Properties implements IPropertyFile {
 
 	protected IFile ifile = null;
-	
+
 	protected File file = null;
 
 	protected char separator = '=';
-	
-	protected boolean hasScapedCode=false;
+
+	protected boolean hasEscapedCode = false;
 
 	/**
 	 * 
@@ -152,7 +152,7 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 			if (aChar == '\\') {
 				aChar = in[off++];
 				if (aChar == 'u') {
-					hasScapedCode = true;
+					hasEscapedCode = true;
 					// Read the xxxx
 					int value = 0;
 					for (int i = 0; i < 4; i++) {
@@ -428,17 +428,11 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 		bw.newLine();
 	}
 
-	public void store(OutputStream out, String comments,boolean escapedUnicode) throws IOException {
-		store0(new BufferedWriter(new OutputStreamWriter(out, Charset.defaultCharset())),
-				comments, escapedUnicode);
+	public void store(OutputStream out, String comments, boolean escapedUnicode)
+			throws IOException {
+		store0(new BufferedWriter(new OutputStreamWriter(out,
+				Charset.defaultCharset())), comments, escapedUnicode);
 	}
-	
-//	public void store(OutputStream out, String comments) throws IOException {
-//		// store0(new BufferedWriter(new OutputStreamWriter(out, "8859_1")),
-//		// comments, true);
-//		store0(new BufferedWriter(new OutputStreamWriter(out, Charset.defaultCharset())),
-//				comments, hasScapedCode);
-//	}
 
 	private void store0(BufferedWriter bw, String comments, boolean escUnicode)
 			throws IOException {
@@ -448,7 +442,7 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 		bw.write("#" + new Date().toString());
 		bw.newLine();
 		synchronized (this) {
-			for (Enumeration e = keys(); e.hasMoreElements();) {
+			for (Enumeration<Object> e = keys(); e.hasMoreElements();) {
 				String key = (String) e.nextElement();
 				String val = (String) get(key);
 				key = saveConvert(key, true, escUnicode);
@@ -488,24 +482,62 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 		return keyList.toArray(new String[keyList.size()]);
 	}
 
+	/**
+	 * This method keep the same state of file. If the file has been loaded
+	 * width escaped code, keep same style
+	 * 
+	 * @throws IOException
+	 *             , CoreException
+	 */
 	public void save() throws IOException, CoreException {
-		this.save(false);
-	}
-	
-	public void save(boolean escapedUnicode) throws IOException, CoreException {
 		OutputStream ostream = new FileOutputStream(file);
-		store(ostream, null,escapedUnicode);
+		store(ostream, null, hasEscapedCode);
 	}
+
+	/**
+	 * This method force to save file in escaped mode.
+	 * 
+	 * @throws IOException
+	 * @throws CoreException
+	 */
+	public void saveAsEscapedUnicode() throws IOException, CoreException {
+		OutputStream ostream = new FileOutputStream(file);
+		store(ostream, null, true);
+	}
+
+	/**
+	 * This method force to save the file in unescaped mode.
+	 * 
+	 * @throws IOException
+	 * @throws CoreException
+	 */
+	public void saveAsUnescapedUnicode() throws IOException, CoreException {
+		OutputStream ostream = new FileOutputStream(file);
+		store(ostream, null, false);
+	}
+
+	// private void save(boolean escapedUnicode) throws IOException,
+	// CoreException {
+	// OutputStream ostream = new FileOutputStream(file);
+	// // If parameter is true, then texts will be converted
+	// if (escapedUnicode) {
+	// store(ostream, null, escapedUnicode);
+	// return;
+	// }
+	// // If parameter is false (the conversion is not forced),
+	// // then texts keep same state detected on load
+	// store(ostream, null, hasEscapedCode);
+	// }
 
 	public IFile getIFile() {
 		return ifile;
 	}
-	
+
 	public File getFile() {
 		return file;
 	}
-	
-	public boolean hasScapedCode(){
-		return this.hasScapedCode;
+
+	public boolean hasEscapedCode() {
+		return this.hasEscapedCode;
 	}
 }
