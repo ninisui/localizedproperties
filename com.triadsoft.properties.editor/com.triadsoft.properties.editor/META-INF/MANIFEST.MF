@@ -15,3 +15,6 @@ Bundle-RequiredExecutionEnvironment: J2SE-1.5
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Import-Package: org.eclipse.jdt.core
+Export-Package: com.triadsoft.properties.editor,
+ com.triadsoft.properties.model,
+ com.triadsoft.properties.model.utils
