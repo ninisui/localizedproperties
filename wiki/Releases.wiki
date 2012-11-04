@@ -1,3 +1,6 @@
+== Version 0.8.5 New features & Bug Fixing ==
+||[http://code.google.com/p/localizedproperties/issues/detail?id=96 96]||Enhancement||Medium||UTF-8 support||
+
 == Version 0.8.1 Bug Fixing ==
 ||Id||Type||Priority||Description||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=72 72]||Enhancement||Medium||Friendly description when the plugin doesn't find an appropiate wildcard|| 
