@@ -1,5 +1,8 @@
 == Version 0.8.5 New features & Bug Fixing ==
 ||Id||Type||Priority||Description||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=32 32]||Defect||Medium||No se pueden abrir archivos que tengas Ñ en el nombre||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=69 69]||Defect||Medium||Agregar autosize a las columnas|| 	 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=80 80]||Defect||Medium||Soportar ficheros unicode y filtrar idiomas||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=96 96]||Enhancement||Medium||UTF-8 support||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=97 97]||Enhancement||Medium||UTF-8 support||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=99 99]||Enhancement||Medium||Loading file error||
