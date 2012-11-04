@@ -6,7 +6,7 @@
   * [Screenshots]
   * [WildcardPath]
   * [Releases]
-  	* [Releases#Version_0.8.1 Version 0.8.5]
+  	* [Releases#Version_0.8.5 Version 0.8.5]
     * [Releases#Version_0.8.1 Version 0.8.1]
     * [Releases#Version_0.8 Version 0.8]
     * [Releases#Version_0.7.5 Version 0.7.5]
