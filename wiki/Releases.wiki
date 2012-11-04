@@ -4,6 +4,7 @@
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=97 97]||Enhancement||Medium||UTF-8 support||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=99 99]||Enhancement||Medium||Loading file error||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=100 100]||Enhancement||Medium||java.io.IOException: Mark invalid by opening large propertie files||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=101 101]||Enhancement||Medium||Escaped chars must be an option||
 
 == Version 0.8.1 Bug Fixing ==
 ||Id||Type||Priority||Description||
