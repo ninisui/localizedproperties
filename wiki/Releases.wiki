@@ -1,10 +1,11 @@
 == Version 0.8.5 New features & Bug Fixing ==
-In this version was made a refactoring file model loader.
-Mainly was to support unicode characters like unicode (\u099)
-Also made changes to keep columns size
-WildcardPath modifications to support all chars in file names
-Keep focus in created key
-Internacionalizations of texts
+In this version was made:
+  * A refactoring file model loader.Mainly was to support unicode characters like unicode (\u099)
+  * Also made changes to keep columns size
+  * WildcardPath modifications to support all chars in file names
+  * Keep focus in created key
+  * Internacionalizations of texts
+  * Bug fixing
   
 ||Id||Type||Priority||Description||
 ||[http://code.google.com/p/localizedproperties/issues/detail?id=32 32]||Defect||Medium||No se pueden abrir archivos que tengas Ñ en el nombre||
