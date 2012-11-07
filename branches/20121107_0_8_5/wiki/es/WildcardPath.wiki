@@ -1,0 +1,32 @@
+#summary This page explain the WildcardPath concept
+#labels ResourceBundle,Properties
+#sidebar TableOfContents
+
+*(Needs translation)*
+
+= Introduction =
+
+WildcardPath es un objeto que permite contruir el path de archivo de properties a partir de los valores pasados como parametros. También permite el proceso inverso, es decir que a partir de un archivo de properties, descubrir cual es el path involucrado.
+
+
+= Details =
+El WildcardPath contiene un string de la forma {{{/{root}/{lang}_{country}/{filename}.{fileextesion}}}} que describe en forma similar a una expresion regular el path del archivo de properties. Cuando el usuario intenta cargar un archivo de recursos con éste editor, el plugin intenta descubrir dentro de los path predeterminados, cual coincide con el path del archivo. 
+Una vez que encontrada una coincidencia, determina los distintos locales que descubre en el árbol de directorios. De ésta manera encuentra los distintos locales a partir del archivo de recursos abierto.
+
+
+El uso de éste objeto busca resolver el problema de que para distintos lenguajes de programacion los archivos de properties tienen su internacionalización bajo distintos patrones.
+
+== [http://java.sun.com/developer/technicalArticles/Intl/ResourceBundles/ Java] ==
+  * El property por default se encuentra en `com.mipaquete.MiProperty.properties`
+  * El property para es AR se encuentra en `com.mipaquete.MiProperty.es_AR.properties`
+  * La i18n de en US se encuentra en `com.mipaquete.MiProperty.en_US.properties`
+
+== Struts ==
+_To Explain_
+
+== [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ==
+  * Generalmente la localizacion se encuentra en un directorio llamado locale al mismo nivel que eldirectorio de fuentes src
+
+== WildcardPath Configuration Screen ==
+
+[http://localizedproperties.googlecode.com/svn/wiki/images/localizedPreferences.png]

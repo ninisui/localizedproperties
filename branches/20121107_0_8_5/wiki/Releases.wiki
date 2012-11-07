@@ -1,0 +1,62 @@
+== Version 0.8.5 New features & Bug Fixing ==
+||Id||Type||Priority||Description||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=32 32]||Defect||Medium||No se pueden abrir archivos que tengas Ñ en el nombre||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=69 69]||Defect||Medium||Agregar autosize a las columnas|| 	 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=80 80]||Defect||Medium||Soportar ficheros unicode y filtrar idiomas||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=96 96]||Enhancement||Medium||UTF-8 support||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=97 97]||Enhancement||Medium||UTF-8 support||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=99 99]||Enhancement||Medium||Loading file error||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=100 100]||Enhancement||Medium||java.io.IOException: Mark invalid by opening large propertie files||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=101 101]||Enhancement||Medium||Escaped chars must be an option||
+
+== Version 0.8.1 Bug Fixing ==
+||Id||Type||Priority||Description||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=72 72]||Enhancement||Medium||Friendly description when the plugin doesn't find an appropiate wildcard|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=77 77]||Defect||Medium||Sort problem on default language column|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=79 79]||Defect||Medium||Adding new repeated key doesn't dispatch an error message|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=82 82]||Defect||Medium||Problem with removing recently added wildcard|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=83 83]||Enhancement||Medium||It must be implemented variant of Locale|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=84 84]||Defect||Medium||A bug in Properties wizard|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=86 86]||Defect||Medium||Wizard return invalid filename, without country infomation|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=89 89]||Defect||Medium||Defaults Wildcards cannot be reloaded|| 
+
+_Thank you to Rafal, for his help for this release_
+
+== Version 0.8 ==
+
+ * In this version has been improved WildcardPath to support more complex paths
+ * The ResourceList has been improved with a best algorithm to discover files
+ * Best error report in Eclipse error log framework
+ * Now you can add optional parts into wildcard path descriptor (see WildcardPath documentation for more details)
+
+=== Fixed Issues===
+||Id||Description||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=38 38]||Files Changes detection||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=42 42]||Bug creating file only with language||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=48 48]||Error adding new locale||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=56 56]||Error loading related files||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=57 57]||Error open files, they are open crossed||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=61 61]||Open other type of files. Ej: .ini Used by Joomla||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=70 70]||Renaming key, just rename into default locale||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=71 71]||Null Pointer Exception with files only with language||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=73 73]||RuntimeException when I try to open any properties file||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=74 74]||wrong duplicated key handling after sort by KEY||
+
+== Version 0.7.5 ==
+_Under update_
+
+== Version 0.7 ==
+_Under update_
+
+
+== Version 0.6 ==
+_Under update_
+
+||Id||Description||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=9 9]||Sinchronization Files Model||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=14 14]||Resource Files without country|| 
+||[http://code.google.com/p/localizedproperties/issues/detail?id=29 29]||Bug WildcardPath||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=31 31]||GWT Files Support||
+||[http://code.google.com/p/localizedproperties/issues/detail?id=51 51]||Sortable Locales||
+
+== Version 0.5 ===
