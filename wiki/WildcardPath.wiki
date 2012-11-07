@@ -41,8 +41,10 @@ Here I'm telling that country and language, are optional. When the file matcher 
 === Struts ===
 _To Explain_
 
-=== [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ===
-_To Explain_
+== [http://livedocs.adobe.com/flex/3/html/help.html?content=l10n_6.html Flex] ==
+  * In Flex commonly the files are included in src/locale folder
+  * Unlike Java, Flex uses locale as folder name instead use locale in filename.
+
 
 == Joomla ===
 _To Explain_
