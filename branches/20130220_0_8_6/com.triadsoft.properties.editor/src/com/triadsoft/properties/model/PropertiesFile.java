@@ -75,6 +75,11 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 		}
 	}
 
+	/**
+	 * This method overrides Properties method, cause I need to detect '~'
+	 * codes, used in some type of files as separator. Also I need to keep the
+	 * used separator on this file.
+	 */
 	public synchronized void load(InputStream inStream) throws IOException {
 		char[] convtBuf = new char[1024];
 		LineReader lr = new LineReader(inStream);
@@ -491,7 +496,15 @@ public class PropertiesFile extends Properties implements IPropertyFile {
 	 */
 	public void save() throws IOException, CoreException {
 		OutputStream ostream = new FileOutputStream(file);
-		store(ostream, null, hasEscapedCode);
+		if (ifile != null && ifile.getCharset().equals("UTF-8")
+				|| ifile.getCharset().equals("UTF-16BE")
+				|| ifile.getCharset().equals("UTF-16LE")
+				|| ifile.getCharset().equals("UTF-32BE")
+				|| ifile.getCharset().equals("UTF-32LE")) {
+			store(ostream, null, true);
+			return;
+		}
+		store(ostream, null, false);
 	}
 
 	/**
